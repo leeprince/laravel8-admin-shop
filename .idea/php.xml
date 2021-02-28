@@ -122,6 +122,7 @@
       <path value="$PROJECT_DIR$/vendor/easywechat-composer/easywechat-composer" />
       <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
       <path value="$PROJECT_DIR$/vendor/overtrue/socialite" />
+      <path value="$PROJECT_DIR$/vendor/overtrue/laravel-wechat" />
     </include_path>
   </component>
   <component name="PhpUnit">

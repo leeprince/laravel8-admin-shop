@@ -14,7 +14,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
-
+    
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -228,5 +228,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    
+    // [项目的外部访问的主机地址] - prince_add_comment 2021-02-28 13:51
+    'project_host' => env('PROJECT_HOST', 'http://localhost'),
 
 ];

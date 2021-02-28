@@ -2974,6 +2974,71 @@
         ]
     },
     {
+        "name": "overtrue/laravel-wechat",
+        "version": "6.0.0",
+        "version_normalized": "6.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/overtrue/laravel-wechat.git",
+            "reference": "80645b30306d4fe78b8dcc884a98e1a241d77fbe"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/overtrue/laravel-wechat/zipball/80645b30306d4fe78b8dcc884a98e1a241d77fbe",
+            "reference": "80645b30306d4fe78b8dcc884a98e1a241d77fbe",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
+        },
+        "require": {
+            "illuminate/container": "^5.1 || ^6.0 || ^7.0 || ^8.0",
+            "overtrue/wechat": "^5.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.16",
+            "laravel/framework": "^8.5"
+        },
+        "time": "2020-09-27T09:18:34+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Overtrue\\LaravelWeChat\\ServiceProvider"
+                ],
+                "aliases": {
+                    "EasyWeChat": "Overtrue\\LaravelWeChat\\Facade"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Overtrue\\LaravelWeChat\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "overtrue",
+                "email": "anzhengchao@gmail.com"
+            }
+        ],
+        "description": "微信 SDK for Laravel",
+        "keywords": [
+            "laravel",
+            "sdk",
+            "wechat",
+            "weixin"
+        ]
+    },
+    {
         "name": "overtrue/socialite",
         "version": "3.1.2",
         "version_normalized": "3.1.2.0",

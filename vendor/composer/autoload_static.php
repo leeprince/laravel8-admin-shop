@@ -17,8 +17,8 @@ class ComposerStaticInitf398c85839f9eb9acd54f9ad08a90e47
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
@@ -34,11 +34,11 @@ class ComposerStaticInitf398c85839f9eb9acd54f9ad08a90e47
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        'f0e7e63bbb278a92db02393536748c5f' => __DIR__ . '/..' . '/overtrue/wechat/src/Kernel/Support/Helpers.php',
+        '6747f579ad6817f318cc3a7e7a0abb93' => __DIR__ . '/..' . '/overtrue/wechat/src/Kernel/Helpers.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
-        'f0e7e63bbb278a92db02393536748c5f' => __DIR__ . '/..' . '/overtrue/wechat/src/Kernel/Support/Helpers.php',
-        '6747f579ad6817f318cc3a7e7a0abb93' => __DIR__ . '/..' . '/overtrue/wechat/src/Kernel/Helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -120,6 +120,7 @@ class ComposerStaticInitf398c85839f9eb9acd54f9ad08a90e47
         'O' => 
         array (
             'Overtrue\\Socialite\\' => 19,
+            'Overtrue\\LaravelWeChat\\' => 23,
             'Opis\\Closure\\' => 13,
         ),
         'N' => 
@@ -406,6 +407,10 @@ class ComposerStaticInitf398c85839f9eb9acd54f9ad08a90e47
         array (
             0 => __DIR__ . '/..' . '/overtrue/socialite/src',
         ),
+        'Overtrue\\LaravelWeChat\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/overtrue/laravel-wechat/src',
+        ),
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
@@ -586,6 +591,7 @@ class ComposerStaticInitf398c85839f9eb9acd54f9ad08a90e47
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\WechatOfficialAccountController' => __DIR__ . '/../..' . '/app/Http/Controllers/WechatOfficialAccountController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -4134,6 +4140,17 @@ class ComposerStaticInitf398c85839f9eb9acd54f9ad08a90e47
         'Opis\\Closure\\SecurityProvider' => __DIR__ . '/..' . '/opis/closure/src/SecurityProvider.php',
         'Opis\\Closure\\SelfReference' => __DIR__ . '/..' . '/opis/closure/src/SelfReference.php',
         'Opis\\Closure\\SerializableClosure' => __DIR__ . '/..' . '/opis/closure/src/SerializableClosure.php',
+        'Overtrue\\LaravelWeChat\\Controllers\\Controller' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Controllers/Controller.php',
+        'Overtrue\\LaravelWeChat\\Controllers\\OpenPlatformController' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Controllers/OpenPlatformController.php',
+        'Overtrue\\LaravelWeChat\\Events\\OpenPlatform\\Authorized' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/OpenPlatform/Authorized.php',
+        'Overtrue\\LaravelWeChat\\Events\\OpenPlatform\\OpenPlatformEvent' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/OpenPlatform/OpenPlatformEvent.php',
+        'Overtrue\\LaravelWeChat\\Events\\OpenPlatform\\Unauthorized' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/OpenPlatform/Unauthorized.php',
+        'Overtrue\\LaravelWeChat\\Events\\OpenPlatform\\UpdateAuthorized' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/OpenPlatform/UpdateAuthorized.php',
+        'Overtrue\\LaravelWeChat\\Events\\OpenPlatform\\VerifyTicketRefreshed' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/OpenPlatform/VerifyTicketRefreshed.php',
+        'Overtrue\\LaravelWeChat\\Events\\WeChatUserAuthorized' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/WeChatUserAuthorized.php',
+        'Overtrue\\LaravelWeChat\\Facade' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Facade.php',
+        'Overtrue\\LaravelWeChat\\Middleware\\OAuthAuthenticate' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Middleware/OAuthAuthenticate.php',
+        'Overtrue\\LaravelWeChat\\ServiceProvider' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/ServiceProvider.php',
         'Overtrue\\Socialite\\Config' => __DIR__ . '/..' . '/overtrue/socialite/src/Config.php',
         'Overtrue\\Socialite\\Contracts\\FactoryInterface' => __DIR__ . '/..' . '/overtrue/socialite/src/Contracts/FactoryInterface.php',
         'Overtrue\\Socialite\\Contracts\\ProviderInterface' => __DIR__ . '/..' . '/overtrue/socialite/src/Contracts/ProviderInterface.php',

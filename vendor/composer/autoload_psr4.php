@@ -58,6 +58,7 @@ return array(
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
     'Overtrue\\Socialite\\' => array($vendorDir . '/overtrue/socialite/src'),
+    'Overtrue\\LaravelWeChat\\' => array($vendorDir . '/overtrue/laravel-wechat/src'),
     'Opis\\Closure\\' => array($vendorDir . '/opis/closure/src'),
     'NunoMaduro\\Collision\\' => array($vendorDir . '/nunomaduro/collision/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
